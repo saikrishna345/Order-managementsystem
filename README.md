@@ -85,3 +85,6 @@ Run the application in third termial (url: http://localhost:4200)
 -----------------------------------------------------------------
 ng serve
 
+Note
+-----
+Validation is done for only Login page
