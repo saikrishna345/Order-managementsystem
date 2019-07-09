@@ -47,6 +47,11 @@ Register and login process
 ---------------------------
 create mysql table to store registered user
 --------------------------------------------
+CREATE DATABASE mydatabase;
+
+USE mydatabase;
+
+please change the password in appserver.js file with your Mysql database password
 
 CREATE TABLE users(  
    Id INT NOT NULL AUTO_INCREMENT,  
@@ -62,6 +67,8 @@ CREATE TABLE users(
 
 INSERT INTO users (Id,Firstname,LastName,email,Password,Gender,phoneNo) values(1,'sai','krishna',
 'saikrishnamulkanuri5@gmail.com','krish123','Male','7386477003');
+
+SELECT * FROM users;
 
 
 Run application in three terminals
