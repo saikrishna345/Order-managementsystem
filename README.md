@@ -1,27 +1,65 @@
-# OrderManagementsystem
+Order management system [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+--------------------------------------------------------------------------------------------
+technologies used: Angular 6, Angular Material, Node js
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+once project is installed change the directory
+----------------------------------------------
+cd Order-managementsystem
 
-## Development server
+installed packages
+------------------
+npm install -g --save @angular/cli@6.1.1
+npm install -g --save body-parser
+npm install -g --save express
+npm install -g --save express-session
+npm install -g --save hammerjs
+npm install -g --save jsonwebtoken
+npm install -g --save mysql
+npm install -g --save cors
+npm install -g --save path
+npm install -g --save json-server
+npm install -g --save @angular/material@6.0.2 @angular/cdk@6.0.2 @angular/animations@6.0.2
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Register and login process
+---------------------------
+create mysql table to store registered user
+...........................................
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+CREATE TABLE users(  
+   Id INT NOT NULL AUTO_INCREMENT,  
+   Firstname VARCHAR(100) NOT NULL,  
+   LastName VARCHAR(100) NOT NULL,  
+   email VARCHAR(100) NOT NULL,
+   Password VARCHAR(100) NOT NULL,
+   Gender VARCHAR(100) NOT NULL,
+   phoneNo VARCHAR(100) NOT NULL,
+   PRIMARY KEY ( Id )  
+);  
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+INSERT INTO users (Id,Firstname,LastName,email,Password,Gender,phoneNo) values(1,'sai','krishna',
+'saikrishnamulkanuri5@gmail.com','krish123','Male','7386477003');
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run application in three terminals
+----------------------------------
 
-## Running end-to-end tests
+To Run Node server(url : http://localhost:3001/users )
+-------------------------------------------------------
+Run command in first terminal
+-----------------------------
+node appserver
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+To Run json-server to get Mock data(url : http://localhost:3000/orders-list)
+-----------------------------------------------------------------------------
+Run command in second terminal
+------------------------------
+json-server --watch db.json
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Run the application in third termial (url: http://localhost:4200)
+-----------------------------------------------------------------
+ng serve
+
