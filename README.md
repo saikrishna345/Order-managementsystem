@@ -106,7 +106,7 @@ Note
 
 * After login is done it will redirect to orders page
 
-* In orders page you add new orders by click + New Order button and edit orders by Edit button and delete by Delete button
+* In orders page you add new orders by clicking + New Order button and edit orders by Edit button and delete by Delete button
 
 * Open the side nav bar to logout
 
