@@ -65,7 +65,7 @@ CREATE TABLE users(
 );  
 
 
-INSERT INTO users (Id,Firstname,LastName,email,Password,Gender,phoneNo) values(1,'sai','krishna',
+INSERT INTO users (Id,Firstname,LastName,email,Password,Gender,phoneNo) VALUES(1,'sai','krishna',
 'saikrishnamulkanuri5@gmail.com','krish123','Male','7386477003');
 
 SELECT * FROM users;
