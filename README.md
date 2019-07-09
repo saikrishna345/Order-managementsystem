@@ -94,4 +94,27 @@ ng serve
 
 Note
 -----
-Validation is done for only Login page
+* Validation is done for only Login page
+
+* once application is Opened home page is Register 
+
+* register as user
+
+* once registeration is done it will redirect to login page
+
+* login with the registered user email and password else it will through error and will not redirect
+
+* after login is done it will redirect to orders page
+
+* you add new orders by click + New Order button and edit orders by Edit button and delete by Delete button
+
+* open the side nav bar to logout
+
+
+
+
+
+
+
+
+
