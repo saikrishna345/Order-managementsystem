@@ -46,7 +46,7 @@ npm install -g --save @angular/material@6.0.2 @angular/cdk@6.0.2 @angular/animat
 Register and login process
 ---------------------------
 create mysql table to store registered user
-...........................................
+--------------------------------------------
 
 CREATE TABLE users(  
    Id INT NOT NULL AUTO_INCREMENT,  
@@ -67,14 +67,14 @@ INSERT INTO users (Id,Firstname,LastName,email,Password,Gender,phoneNo) values(1
 Run application in three terminals
 ----------------------------------
 
-To Run Node server(url : http://localhost:3001/users )
+To Run Node server in appserver.js file (url : http://localhost:3001/users )
 -------------------------------------------------------
 Run command in first terminal
 -----------------------------
 node appserver
 
 
-To Run json-server to get Mock data(url : http://localhost:3000/orders-list)
+To Run json-server to get Mock data from db.json file (url : http://localhost:3000/orders-list)
 -----------------------------------------------------------------------------
 Run command in second terminal
 ------------------------------
