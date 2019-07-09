@@ -9,16 +9,38 @@ cd Order-managementsystem
 installed packages
 ------------------
 npm install -g --save @angular/cli@6.1.1
+
+
 npm install -g --save body-parser
+
+
 npm install -g --save express
+
+
 npm install -g --save express-session
+
+
 npm install -g --save hammerjs
+
+
 npm install -g --save jsonwebtoken
+
+
 npm install -g --save mysql
+
+
 npm install -g --save cors
+
+
 npm install -g --save path
+
+
 npm install -g --save json-server
+
+
 npm install -g --save @angular/material@6.0.2 @angular/cdk@6.0.2 @angular/animations@6.0.2
+
+
 
 
 Register and login process
