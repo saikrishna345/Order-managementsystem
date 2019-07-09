@@ -81,7 +81,7 @@ Run command in second terminal
 json-server --watch db.json
 
 
-Run the application in third termial (url: http://localhost:4200)
+Run the Angular application in third termial (url: http://localhost:4200)
 -----------------------------------------------------------------
 ng serve
 
