@@ -34,7 +34,7 @@ mysqlconnection.connect((err) =>{
 })
 
 
-app.listen(3001,()=> console.log('server listening to port number 3000'));
+app.listen(3001,()=> console.log('server listening to port number 3001'));
 
 // session login
 app.use(session({
