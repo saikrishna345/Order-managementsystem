@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup} from '@angular/forms';
+import { FormControl, FormGroup,  Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { RegisterService } from './register.service';
@@ -13,13 +13,13 @@ import { NotificationService } from '../notification.service';
 })
 export class RegisterComponent implements OnInit {
   submitted = false;
-  regformgrp = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    password: new FormControl(''),
-    gender: new FormControl(''),
-    phone: new FormControl('')
+   regformgrp = new FormGroup({
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required]),
+    gender: new FormControl('', [Validators.required]),
+    phone: new FormControl('', [Validators.required])
     });
 user = new Users();
 
