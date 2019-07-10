@@ -98,6 +98,8 @@ Note
 
 * Once application is Opened home page is Register 
 
+* check the three servers(node,angular,json-server) are running fine
+
 * Register as user
 
 * Once registeration is done it will redirect to login page
