@@ -46,7 +46,7 @@
     <mat-icon matSuffix>phone</mat-icon>
     <mat-hint>Include area code</mat-hint>
   </mat-form-field><br>
-<button  type="submit" mat-raised-button color="accent">Signup</button>
+<button  type="submit" mat-raised-button color="accent" [disabled]="regformgrp.invalid">Signup</button>
 <br>
 <br>
 <span>Already have an account? <a routerLink='/login'> Please Login</a></span>
